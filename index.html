@@ -9,65 +9,53 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="./style.css">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
-</head>
+    <body>
+        <main>
+            <div class="visualizacion">
+                <img class="lat-izq" src="./assets/bg-main-desktop.png" alt="design">
+                <div class="tarjeta-frente">
+                    <img src="./assets/card-logo.svg" alt="card-logo">
+                    <p id="card-number"></p>
+                    <span id="user-name"></span>
+                    <span id="date-expedition"></span>
 
-<body>
-    <main>
-        <div class="visualizacion">
-            <img src="./assets/bg-main-desktop.png" alt="design">
-            <div class="tarjeta-frente">
-                <img src="./assets/card-logo.svg" alt="card-logo">
-                <p id="card-number"></p>
-                <span id="user-name"></span>
-                <span id="date-expedition"></span>
-
+                </div>
+                <div class="tarjeta-detras">
+                    <span id="cvc"></span>
+                </div>
             </div>
-            <div class="tarjeta-detras">
-                <span id="cvc"></span>
+
+            <div class="formulario">
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name-user">CARDHOLDER NAME</label>
+                            <input type="text" id="name-user" name="name-user">
+                        </li>
+                        <li>
+                            <label for="number-card">CARD NUMBER</label>
+                            <input type="text" id="number-card" name="number-card">
+
+                        </li>
+                        <li>
+                            <div class="date-exp">
+                                <label for="month">EXP.DATE(MM/YY)</label>
+                                <input type="text" id="month" name="month">
+                                <input type="text" id="year" name="year">
+                            </div>
+                            <label for="cvc">CVC</label>
+                            <input type="text" name="cvc" id="cvc">
+                        </li>
+                        <li>
+                            <button type="button">Confirm</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
-        </div>
-
-        <div class="formulario">
-            <form method="post">
-                <ul>
-                    <li>
-                        <label for="name-user">CARDHOLDER NAME</label>
-                        <input type="text" id="name-user" name="name-user">
-                    </li>
-                    <li>
-                        <label for="number-card">CARD NUMBER</label>
-                        <input type="text" id="number-card" name="number-card">
-
-                    </li>
-                    <li>
-                        <div class="date-exp">
-                            <label for="month">EXP.DATE(MM/YY)</label>
-                            <input type="text" id="month" name="month">
-                            <input type="text" id="year" name="year">
-                        </div>
-                        <label for="cvc">CVC</label>
-                        <input type="text" name="cvc" id="cvc">
-                    </li>
-                    <li>
-                        <button type="#">Confirm</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </main>
-    <!--
+        </main>
+        <!--
   0000 0000 0000 0000
   Jane Appleseed
   00/00
@@ -95,9 +83,9 @@
   We've added your card details
   Continue
 -->
-    <div role="footer" class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-    </div>
-</body>
+        <div role="footer" class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </body>
 
 </html>
