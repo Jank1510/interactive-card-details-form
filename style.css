@@ -19,7 +19,7 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    width: 1437px;
+    width: 1445px;
     height: 900px;
 }
 
@@ -54,4 +54,84 @@ main {
     background-image: url(./assets/bg-card-back.png);
     border-radius: 0.7rem;
     margin-left: 17rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario form {
+    width: 30rem;
+}
+
+.formulario form ul {
+    list-style: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.formulario form ul li label {
+    display: block;
+}
+
+.li-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.li-3 div {
+    width: 50%;
+}
+
+.input-100 {
+    width: 93.45%;
+    margin-top: 0.5em;
+    height: 2.2rem;
+    border-radius: 0.4rem;
+    padding: 0 1rem;
+    border: 2px solid hsl(270, 3%, 87%);
+}
+
+.date-exp input {
+    width: 25%;
+    margin-top: 0.5em;
+    height: 2.2rem;
+    border-radius: 0.4rem;
+    border: 2px solid hsl(270, 3%, 87%);
+    padding: 0 1rem;
+}
+
+#year {
+    margin-left: 0.5rem;
+}
+
+.cvc input {
+    width: 87%;
+    margin-top: 0.5em;
+    height: 2.2rem;
+    border-radius: 0.4rem;
+    border: 2px solid hsl(270, 3%, 87%);
+    padding: 0 1rem;
+}
+
+.formulario form ul li button {
+    width: 102%;
+    height: 3.5rem;
+    border: none;
+    background-color: rgb(34, 9, 48);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+}
+
+input:focus {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, hsl(249, 99%, 64%)0%, hsl(278, 94%, 30%)100%)1;
+    outline: none;
+    border-radius: 1rem;
 }

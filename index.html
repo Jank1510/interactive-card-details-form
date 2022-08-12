@@ -32,21 +32,22 @@
                     <ul>
                         <li>
                             <label for="name-user">CARDHOLDER NAME</label>
-                            <input type="text" id="name-user" name="name-user">
+                            <input placeholder="e.g Jane Appleseed" class="input-100" type="text" id="name-user" name="name-user">
                         </li>
                         <li>
                             <label for="number-card">CARD NUMBER</label>
-                            <input type="text" id="number-card" name="number-card">
+                            <input placeholder="e.g. 1234 5678 9123 0000" class="input-100" type="text" id="number-card" name="number-card">
 
                         </li>
-                        <li>
+                        <li class="li-3">
                             <div class="date-exp">
                                 <label for="month">EXP.DATE(MM/YY)</label>
-                                <input type="text" id="month" name="month">
-                                <input type="text" id="year" name="year">
+                                <input placeholder="MM" type="text" id="month" name="month">
+                                <input placeholder="YY" type="text" id="year" name="year">
                             </div>
-                            <label for="cvc">CVC</label>
-                            <input type="text" name="cvc" id="cvc">
+                            <div class="cvc">
+                                <label for="cvc-">CVC</label>
+                                <input placeholder="e.g. 123" type="text" name="cvc-" id="cvc-"></div>
                         </li>
                         <li>
                             <button type="button">Confirm</button>
@@ -66,14 +67,14 @@
   e.g. Jane Appleseed
 
   Card Number
-  e.g. 1234 5678 9123 0000
+
 
   Exp. Date (MM/YY)
   MM
   YY
 
   CVC
-  e.g. 123
+ 
 
   Confirm
 
