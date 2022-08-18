@@ -80,6 +80,13 @@ main {
     display: block;
 }
 
+.formulario form ul li span {
+    margin: 0;
+    position: absolute;
+    font-size: 15px;
+    color: hsl(0, 100%, 66%);
+}
+
 .li-3 {
     display: flex;
     flex-direction: row;
@@ -136,10 +143,10 @@ main {
 }
 
 input:focus {
+    border: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(to left, hsl(249, 99%, 64%)0%, hsl(278, 94%, 30%)100%)1;
+    border-image: linear-gradient(to left, hsl(249, 99%, 64%)0%, hsl(278, 94%, 30%)100%)1 !important;
     outline: none;
-    border-radius: 1rem;
 }
 
 #card-number {
