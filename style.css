@@ -18,13 +18,6 @@ body {
     font-size: 18px;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    width: 1445px;
-    height: 900px;
-}
-
 .visualizacion {
     display: flex;
     flex-direction: column;
@@ -33,17 +26,13 @@ main {
     row-gap: 2.5rem;
 }
 
-.lat-izq {
-    position: fixed;
-    z-index: -1;
-}
-
 .tarjeta-frente {
     width: 28rem;
     height: 15.3rem;
     background-image: url(./assets/bg-card-front.png);
     border-radius: 0.7rem;
     margin-left: 10rem;
+    position: relative;
 }
 
 .tarjeta-frente img {
@@ -155,6 +144,7 @@ input:focus {
     text-align: center;
     margin-top: 1.3rem;
     color: hsl(0, 0%, 100%);
+    letter-spacing: 5px;
     margin-bottom: 1.43rem;
 }
 
@@ -167,6 +157,9 @@ input:focus {
 
 #date-expedition {
     color: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 0;
+    margin-right: 2.5rem;
 }
 
 #cvc {
@@ -174,4 +167,76 @@ input:focus {
     display: block;
     margin-left: 22.5rem;
     color: white;
+}
+
+#error-mm {
+    margin-left: -6rem;
+    margin-top: 3rem;
+}
+
+#error-cvc {
+    margin-left: 14rem;
+    margin-top: 4.5rem;
+}
+
+.thank {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.txtThank {
+    color: hsl(279, 6%, 55%);
+}
+
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: inherit;
+}
+
+.thankYou button {
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(34, 9, 48);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+@media (min-width: 360px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        width: 100%;
+        height: auto;
+    }
+    .lat-izq {
+        src: "./assets/bg-main-mobile.png";
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1445px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 1445px;
+        height: 900px;
+        width: auto;
+    }
+    .lat-izq {
+        src: "./assets/bg-main-desktop.png";
+        width: auto;
+        position: fixed;
+        z-index: -1;
+    }
 }
