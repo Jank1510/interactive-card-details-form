@@ -32,10 +32,6 @@ body {
     justify-content: center;
 }
 
-.formulario form {
-    width: 30rem;
-}
-
 .formulario form ul {
     list-style: none;
     list-style: none;
@@ -74,28 +70,8 @@ body {
     font-size: 18px;
 }
 
-.date-exp input {
-    width: 25%;
-    margin-top: 0.5em;
-    height: 2.2rem;
-    border-radius: 0.4rem;
-    border: 2px solid hsl(270, 3%, 87%);
-    padding: 0 1rem;
-    font-size: 18px;
-}
-
 #year {
     margin-left: 0.5rem;
-}
-
-.cvc input {
-    width: 87%;
-    margin-top: 0.5em;
-    height: 2.2rem;
-    border-radius: 0.4rem;
-    border: 2px solid hsl(270, 3%, 87%);
-    padding: 0 1rem;
-    font-size: 18px;
 }
 
 .formulario form ul li button {
@@ -117,16 +93,6 @@ input:focus {
     outline: none;
 }
 
-#error-mm {
-    margin-left: -6rem;
-    margin-top: 3rem;
-}
-
-#error-cvc {
-    margin-left: 14rem;
-    margin-top: 4.5rem;
-}
-
 .thank {
     font-size: 2rem;
     margin-bottom: 0;
@@ -134,15 +100,6 @@ input:focus {
 
 .txtThank {
     color: hsl(279, 6%, 55%);
-}
-
-.thankYou {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: inherit;
 }
 
 .thankYou button {
@@ -195,11 +152,11 @@ input:focus {
         margin-top: 0.3rem;
         color: hsl(0, 0%, 100%);
         letter-spacing: 4px;
-        margin-bottom: 0.43rem;
+        margin-bottom: 1.43rem;
     }
     #user-name {
         margin-left: 1.3rem;
-        margin-right: 9.5rem;
+        margin-right: 7.5rem;
         margin-bottom: 2rem;
         color: hsl(0, 0%, 100%);
     }
@@ -235,6 +192,48 @@ input:focus {
         justify-content: center;
         margin-top: 50vh;
     }
+    .formulario form {
+        width: 88%;
+    }
+    .date-exp input {
+        width: 19%;
+        margin-top: 0.5em;
+        height: 2.2rem;
+        border-radius: 0.4rem;
+        border: 2px solid hsl(270, 3%, 87%);
+        padding: 0 1rem;
+        font-size: 18px;
+    }
+    .cvc input {
+        width: 75%;
+        margin-top: 0.5em;
+        height: 2.2rem;
+        border-radius: 0.4rem;
+        border: 2px solid hsl(270, 3%, 87%);
+        padding: 0 1rem;
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    .cvc label {
+        margin-left: 20%;
+    }
+    #error-mm {
+        margin-left: -4rem;
+        margin-top: 3rem;
+    }
+    #error-cvc {
+        margin-left: 10rem;
+        margin-top: 4.5rem;
+    }
+    .thankYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: inherit;
+        margin-top: 55vh;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -249,6 +248,8 @@ input:focus {
         width: auto;
         position: fixed;
         z-index: -1;
+        height: auto;
+        top: auto;
     }
     .tarjeta-frente {
         width: 28rem;
@@ -257,6 +258,8 @@ input:focus {
         border-radius: 0.7rem;
         margin-left: 10rem;
         position: relative;
+        top: auto;
+        left: auto;
     }
     .tarjeta-frente img {
         margin: 2rem;
@@ -288,6 +291,7 @@ input:focus {
         background-image: url(./assets/bg-card-back.png);
         border-radius: 0.7rem;
         margin-left: 17rem;
+        position: initial;
     }
     #cvc {
         margin-top: 7rem;
@@ -295,10 +299,55 @@ input:focus {
         margin-left: 22.5rem;
         padding-right: 3px;
         color: white;
+        text-align: left;
+        font-size: 18px;
     }
     .formulario {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: auto;
+    }
+    .formulario form {
+        width: 30rem;
+    }
+    .date-exp input {
+        width: 25%;
+        margin-top: 0.5em;
+        height: 2.2rem;
+        border-radius: 0.4rem;
+        border: 2px solid hsl(270, 3%, 87%);
+        padding: 0 1rem;
+        font-size: 18px;
+    }
+    .cvc input {
+        width: 87%;
+        margin-top: 0.5em;
+        height: 2.2rem;
+        border-radius: 0.4rem;
+        border: 2px solid hsl(270, 3%, 87%);
+        padding: 0 1rem;
+        font-size: 18px;
+        margin-left: auto;
+    }
+    .cvc label {
+        margin-left: auto;
+    }
+    #error-mm {
+        margin-left: -6rem;
+        margin-top: 3rem;
+    }
+    #error-cvc {
+        margin-left: 14rem;
+        margin-top: 4.5rem;
+    }
+    .thankYou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: inherit;
+        margin-top: 0;
     }
 }
