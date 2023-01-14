@@ -1,5 +1,5 @@
 # interactive-card-details-form
-interactive-card-details-form CHALLENGE
+interactive-card-details-form CHALLENGE no terminado
 
 link:
 https://jank1510.github.io/interactive-card-details-form/
